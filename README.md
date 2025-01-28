@@ -45,5 +45,16 @@ The renderTable function shows a table with the cleaned dataset. Users can chang
 3. Shiny App Execution
 At the end, the shinyApp function integrates the UI and server components and launches the interactive application.
 
+## **Data Source**
+This Dataset is provided from Kaggle. The link is accessibe from here: 
+https://www.kaggle.com/datasets/imtkaggleteam/mental-health/data
+
+## **Runnig the App**
+shinyApp(ui = ui, server = server)
+
+
+
+
+
 
 

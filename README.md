@@ -7,11 +7,11 @@ The data includes the following variables:
 •	Year: The year of data collection, ranging from 1990 to 2019.
 •	Prevalence of 5 Mental Health issues (Schizophrenia, Depression, Anxiety, Bipolar, and Eating Disorders)
 
-Persona:
+## **Persona**
 The users of this data set can be public health researchers, policymakers, and the healthcare professionals who work on mental health issues globally. The users may be conducting comparative analyses, epidemiological studies, or interventions to address mental health issues based on the provided data.
 
 
-Code Description and Analysis
+## **Code Description and Analysis**
 This Shiny application “Mental Health”, is designed to clean and visualize mental health survey data. The code includes three components: the user interface (UI), server logic, and the Shiny app execution. 
 
 1. User Interface (UI)

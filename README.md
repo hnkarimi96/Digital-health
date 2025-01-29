@@ -57,6 +57,12 @@ At the end, the `shinyApp` function integrates the UI and server components and 
 ## **Data Source**
 This dataset is provided from Kaggle. You can access it [here](https://www.kaggle.com/datasets/imtkaggleteam/mental-health/data).
 
+The## 🎉 Shiny App Deployment
+
+The deployment of the Shiny app is accessible at the link below:
+
+🔗 **[Click here to access the Shiny App](https://haniehkarimi.shinyapps.io/shiny/)**
+
 ## **Running the App**
 
 Once the required libraries are installed, run the following code to launch the app:

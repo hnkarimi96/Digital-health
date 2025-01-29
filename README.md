@@ -61,7 +61,7 @@ This dataset is provided from Kaggle. You can access it [here](https://www.kaggl
 
 The deployment of the Shiny app is accessible at the link below:
 
-🔗 **[Click here to access the Shiny App](https://haniehkarimi.shinyapps.io/shiny/)**
+🔗 **[My Shiny App](https://haniehkarimi.shinyapps.io/shiny/)**
 
 ## **Running the App**
 

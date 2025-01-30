@@ -23,7 +23,6 @@ The User Interface (UI) includes the following elements:
 
 - **Title Panel**: Displays the application title.
 - **Sidebar Panel**:
-  - A `fileInput` widget to upload a CSV file.
   - Two `selectInput` widgets to choose the X and Y variables for plotting.
   - A `checkboxInput` that lets users toggle the visibility of the data table.
   - A `sliderInput` to adjust the sample size displayed and plotted.
@@ -43,7 +42,7 @@ The `clean_data` function ensures the uploaded dataset is accurate. Key cleaning
 - **Outlier Removal**
 
 #### **Reactive Dataset**
-A reactive expression processes the uploaded data file, applying the cleaning function and updating the UI elements. This ensures that users can immediately work with their dataset after uploading it.
+A reactive expression processes the data file, applying the cleaning function and updating the UI elements. This ensures that users can immediately work with the dataset.
 
 #### **Scatter Plot Generation**
 The `renderPlot` function creates a scatter plot using `ggplot2`. The plot updates based on the user's selected X and Y variables and the sample size. This allows users to find relationships between variables visually.
@@ -61,7 +60,7 @@ This dataset is provided from Kaggle. You can access it [here](https://www.kaggl
 
 The deployment of the Shiny app is accessible at the link below:
 
-🔗 **[My Shiny App](https://haniehkarimi.shinyapps.io/shiny/)**
+🔗 **[My Shiny App]((https://haniehkarimi.shinyapps.io/mental_health/))**
 
 ## **Running the App**
 

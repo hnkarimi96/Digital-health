@@ -15,46 +15,53 @@ The data includes the following variables:
 The users of this dataset can be public health researchers, policymakers, and healthcare professionals who work on mental health issues globally. They may be conducting comparative analyses, epidemiological studies, or interventions to address mental health issues based on the provided data.
 
 ## **Code Description and Analysis**
-This Shiny application **"Mental Health"** is designed to clean and visualize mental health survey data. The code includes three main components: the user interface (UI), server logic, and the Shiny app execution.
+# Mental Health Shiny Application
 
-### **1. User Interface (UI)**
+This Shiny application, **Mental Health**, is designed to clean and visualize mental health survey data.
+
+## 1. User Interface (UI)
 
 The User Interface (UI) includes the following elements:
 
-- **Title Panel**: Displays the application title.
-- **Sidebar Panel**:
+- **Title Panel:** Displays the application title.
+- **Sidebar Panel:**
+  - A `selectInput` dropdown for filtering data by **Country**.
   - Two `selectInput` widgets to choose the X and Y variables for plotting.
   - A `checkboxInput` that lets users toggle the visibility of the data table.
   - A `sliderInput` to adjust the sample size displayed and plotted.
-- **Main Panel**: Contains a `tabsetPanel` with two tabs:
-  - **Plot Tab**: Displays a scatter plot.
-  - **Data Table Tab**: Displays a cleaned data table.
+- **Main Panel:** Contains a `tabsetPanel` with two tabs:
+  - **Plot Tab:** Displays a scatter plot.
+  - **Data Table Tab:** Displays a cleaned data table.
 
-### **2. Server Logic**
+## 2. Server Logic
 
 The server logic includes data cleaning, visualization, and user interactions.
 
-#### **Data Cleaning Function**
+### Data Cleaning Function
+
 The `clean_data` function ensures the uploaded dataset is accurate. Key cleaning steps include:
+
 - **Missing Value Removal** (`na.omit.`)
 - **Duplicate Removal** (`!duplicated.`)
 - **Numeric Conversion**
 - **Outlier Removal**
 
-#### **Reactive Dataset**
-A reactive expression processes the data file, applying the cleaning function and updating the UI elements. This ensures that users can immediately work with the dataset.
+### Reactive Dataset
 
-#### **Scatter Plot Generation**
-The `renderPlot` function creates a scatter plot using `ggplot2`. The plot updates based on the user's selected X and Y variables and the sample size. This allows users to find relationships between variables visually.
+A reactive expression loads and processes the preloaded dataset (`default_data.csv`), applying the cleaning function and updating the UI elements. It also filters the dataset based on the selected country, ensuring that the user can immediately work with relevant data.
 
-#### **Data Table Rendering**
-The `renderTable` function shows a table with the cleaned dataset. Users can toggle its visibility and limit the sample size displayed.
+### Scatter Plot Generation
 
-### **3. Shiny App Execution**
+The `renderPlot` function creates a scatter plot using `ggplot2`. The plot updates based on the user's selected X and Y variables, country selection, and the sample size. This allows users to find relationships between variables visually.
+
+### Data Table Rendering
+
+The `renderTable` function shows a table with the cleaned and filtered dataset based on the selected country. Users can toggle its visibility and limit the sample size displayed.
+
+## 3. Shiny App Execution
+
 At the end, the `shinyApp` function integrates the UI and server components and launches the interactive application.
 
-## **Data Source**
-This dataset is provided from Kaggle. You can access it [here](https://www.kaggle.com/datasets/imtkaggleteam/mental-health/data).
 
 ## **🎉 The Shiny App Deployment**
 

@@ -15,9 +15,6 @@ The data includes the following variables:
 The users of this dataset can be public health researchers, policymakers, and healthcare professionals who work on mental health issues globally. They may be conducting comparative analyses, epidemiological studies, or interventions to address mental health issues based on the provided data.
 
 ## **Code Description and Analysis**
-# Mental Health Shiny Application
-
-This Shiny application, **Mental Health**, is designed to clean and visualize mental health survey data.
 
 ## 1. User Interface (UI)
 

@@ -59,6 +59,10 @@ The `renderTable` function shows a table with the cleaned and filtered dataset b
 
 At the end, the `shinyApp` function integrates the UI and server components and launches the interactive application.
 
+## Dataset
+
+The dataset used in this application is provided from [Kaggle - Mental Health Dataset](https://www.kaggle.com/datasets/imtkaggleteam/mental-health/data).
+
 
 ## **🎉 The Shiny App Deployment**
 

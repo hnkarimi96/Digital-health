@@ -60,7 +60,7 @@ This dataset is provided from Kaggle. You can access it [here](https://www.kaggl
 
 The deployment of the Shiny app is accessible at the link below:
 
-🔗 **[My Shiny App]((https://haniehkarimi.shinyapps.io/mental_health/))**
+🔗 **[My Shiny App](https://haniehkarimi.shinyapps.io/mental_health/)**
 
 ## **Running the App**
 
